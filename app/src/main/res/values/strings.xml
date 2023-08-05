@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">bipru</string>
+    <string name="next">Далее</string>
+    <string name="skip">Пропустить</string>
+
+    <!--VRP Fragment-->
+    <string name="enter_vehicle_registration_plates">Введите государственный регистрационный знак</string>
+    <string name="enter_vrp">Введите ГРЗ</string>
+    <string name="vrp_hint">A111AA11</string>
+
+    <!--VRC Fragment-->
+    <string name="enter_vehicle_registration_certificates">Введите номер свидетельства о регистрации транспортного средства</string>
+    <string name="enter_vrc">Введите СТС</string>
+    <string name="vrc_hint">12АБ345678</string>
+
+    <!--Drivers License Fragment-->
+    <string name="drivers_license_results">ВУ:</string>
+    <string name="drivers_license_hint">12АБ345678</string>
+    <string name="enter_drivers_license">Введите номер водительского удостоверения</string>
+
+    <!--Results Fragment-->
+    <string name="results">Результаты</string>
+    <string name="vrp_results">ГРЗ:</string>
+    <string name="vrc_results">СТС:</string>
+
+    <!--Alert-->
+    <string name="button_ok">Да</string>
+    <string name="button_cancel">Закрыть</string>
+    <string name="alert_title">Вы уверены, что хотите пропустить этот шаг?</string>
+</resources>

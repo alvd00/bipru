@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/nav_vrp">
+
+    <fragment
+        android:id="@+id/nav_vrp"
+        android:name="com.example.bipru.presentation.screens.vrp.VRPFragment"
+        tools:layout="@layout/fragment_vrp">
+
+        <action
+            android:id="@+id/action_main_to_vrc"
+            app:destination="@id/nav_vrc"
+            app:popUpTo="@+id/nav_vrp"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_vrp_to_drivers_license"
+            app:destination="@id/nav_drivers_license"
+            app:popUpTo="@+id/nav_vrp"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_vrp_to_results"
+            app:destination="@id/nav_results"
+            app:popUpTo="@+id/nav_vrp"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_vrc"
+        android:name="com.example.bipru.presentation.screens.vrc.VRCFragment"
+        tools:layout="@layout/fragment_vrc">
+
+        <action
+            android:id="@+id/action_vrc_to_vrp"
+            app:destination="@id/nav_vrp"
+            app:popUpTo="@+id/nav_vrc"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_vrc_to_drivers_license"
+            app:destination="@id/nav_drivers_license"
+            app:popUpTo="@+id/nav_vrc"
+            app:popUpToInclusive="true" />
+
+        <argument
+            android:name="vrp"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_drivers_license"
+        android:name="com.example.bipru.presentation.screens.drivers_license.DriversLicenseFragment"
+        tools:layout="@layout/fragment_drivers_license">
+
+        <action
+            android:id="@+id/action_drivers_license_to_vrc"
+            app:destination="@id/nav_vrc"
+            app:popUpTo="@+id/nav_drivers_license"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_drivers_license_to_results"
+            app:destination="@id/nav_results"
+            app:popUpTo="@+id/nav_drivers_license"
+            app:popUpToInclusive="true" />
+
+<!--        <argument-->
+<!--            android:name="vrp"-->
+<!--            app:argType="string" />-->
+
+<!--        <argument-->
+<!--            android:name="vrc"-->
+<!--            app:argType="string" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_results"
+        android:name="com.example.bipru.presentation.screens.results.ResultsFragment"
+        tools:layout="@layout/fragment_results">
+
+        <action
+            android:id="@+id/action_results_to_drivers_license"
+            app:destination="@id/nav_drivers_license"
+            app:popUpTo="@+id/nav_results"
+            app:popUpToInclusive="true" />
+
+<!--        <argument-->
+<!--            android:name="vrp"-->
+<!--            app:argType="string" />-->
+
+<!--        <argument-->
+<!--            android:name="vrc"-->
+<!--            app:argType="string" />-->
+
+<!--        <argument-->
+<!--            android:name="drivers_license"-->
+<!--            app:argType="string" />-->
+    </fragment>
+
+</navigation>

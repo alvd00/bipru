@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/smsCodeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/titleCodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_28"
+            android:gravity="center"
+            android:padding="@dimen/dimen_12"
+            android:text="@string/enter_vehicle_registration_plates"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/codeEditText"
+            style="@style/TextEditStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_52"
+            android:layout_marginHorizontal="@dimen/dimen_24"
+            android:layout_marginVertical="@dimen/dimen_28"
+            android:layout_marginTop="28dp"
+            android:maxLines="1"
+            android:textColorHint="@color/gray_D0D3D8"
+            android:hint="@string/vrp_hint"
+            android:maxLength="8"
+            android:paddingHorizontal="@dimen/dimen_16"
+            android:textSize="@dimen/text_16"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/nextButton"
+            style="@style/GreenActionButtonStyle"
+            android:layout_width="match_parent"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_24"
+            android:layout_marginBottom="12dp"
+            android:text="@string/next" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/skipTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/skip"
+            android:textColor="@color/gray_EFF1F6"
+            android:textSize="16sp"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</FrameLayout>
